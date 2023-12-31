@@ -23,12 +23,10 @@ export default function NewsIt(props) {
             {props.article.title?.substring(0,50)}
           </Typography>
           <Typography>
-            {props.article.description?.substring(0,100)}
+            {props.article.description?.substring(0,100).concat("....")}<a className=" font-semibold text-green-700 hover:text-green-400" href={props.article.url}>Read More</a>
           </Typography>
         </CardBody>
-        <CardFooter className="pt-0">
-          <Button>Read More</Button>
-        </CardFooter>
+        
       </Card>
     );
   }
