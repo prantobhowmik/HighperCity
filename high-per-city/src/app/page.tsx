@@ -9,13 +9,15 @@ import {Footer} from './Footer/page'
 export default function Home() {
   return (
     <ThemeProvider>
-    <div className=''>
-      <Nav/>
-      <News/>
-      <div className='absolute inset-x-0 bottom-0 '>
-        <Footer/>
+    
+      <div>
+        <Nav/>
       </div>
-    </div>
+      <div>
+        <News/>
+      </div>
+      
+    
     </ThemeProvider>
   )
 }
