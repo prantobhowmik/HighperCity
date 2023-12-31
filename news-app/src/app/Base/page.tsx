@@ -1,8 +1,11 @@
 import React from 'react'
+import Nav from '../Nav/page'
 
 const Base = () => {
   return (
-    <div>Base</div>
+    <div>
+        <Nav/>
+    </div>
   )
 }
 
