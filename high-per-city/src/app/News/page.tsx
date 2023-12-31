@@ -7,6 +7,7 @@ const News = () => {
 
     let[articles, setArticles]= useState([]);
 
+
     useEffect(()=>{
         fetch('https://newsapi.org/v2/everything?q=bangladesh&from=2023-12-30&apiKey=fe4c71c38a434367902e165d55be3f7c')
         .then((response)=>response.json())
