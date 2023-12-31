@@ -18,7 +18,7 @@ const News = () => {
         })
     },[])
   return (
-    <section className='flex flex-wrap p-2 gap-x-4 gap-y-5  justify-center'>
+    <section className='flex flex-wrap p-2 gap-x-4 gap-y-5  justify-center '>
         {
             articles.map((article)=>{
                 return(

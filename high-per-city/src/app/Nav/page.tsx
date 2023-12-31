@@ -14,7 +14,7 @@ export default function Nav() {
     <Navbar
       variant="gradient"
       color="blue-gray"
-      className=" mx-auto max-w-screen from-blue-gray-900 to-blue-gray-800 px-4 py-3"
+      className=" top-0 left-0 right-0 botttom-0  mx-auto max-w-screen from-blue-gray-900 to-blue-gray-800 px-4 py-3"
       >
       <div className="flex flex-wrap items-center justify-between gap-y-4 text-white">
         <div className="flex">

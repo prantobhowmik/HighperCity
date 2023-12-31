@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <ThemeProvider>
     
-      <div>
-        <Nav/>
+      <div className=''>
+        <Nav />
       </div>
       <div>
         <News/>

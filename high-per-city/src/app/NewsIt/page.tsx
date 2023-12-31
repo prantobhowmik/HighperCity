@@ -11,8 +11,8 @@ import {
 export default function NewsIt(props) {
     console.log(props)
     return (
-      <Card className="mt-6 w-80">
-        <CardHeader color="blue-gray" className="relative">
+      <Card className="mt-6 size-3/12">
+        <CardHeader color="blue-gray" className="relative overflow-hidden">
           <img
             src={props.article.urlToImage}
             alt="card-image"
@@ -20,10 +20,10 @@ export default function NewsIt(props) {
         </CardHeader>
         <CardBody>
           <Typography variant="h5" color="blue-gray" className="mb-2">
-            {props.article.title}
+            {props.article.title?.substring(0,50)}
           </Typography>
           <Typography>
-            {props.article.content}
+            {props.article.description?.substring(0,100)}
           </Typography>
         </CardBody>
         <CardFooter className="pt-0">
