@@ -23,6 +23,7 @@ const News = () => {
         {
             articles.map((article)=>{
                 return(
+                    // eslint-disable-next-line react/jsx-key
                     <NewsIt article = {article} />
                 )
             })
