@@ -7,6 +7,7 @@ import {
     Typography,
     Button,
   } from "@material-tailwind/react";
+import Link from "next/link";
    
 export default function NewsIt(articles) {
     return (
@@ -22,7 +23,11 @@ export default function NewsIt(articles) {
             {articles.article.title?.substring(0,50)}
           </Typography>
           <Typography>
-            {articles.article.description?.substring(0,100).concat("....")}<a className=" font-semibold text-green-700 hover:text-green-400" href={articles.article.url}target='-blank'>Read More</a>
+            {articles.article.description?.substring(0,100).concat("....")}
+            <Link className=" font-semibold text-green-700 hover:text-green-400" href={{
+              pathname:"/PageDetails",
+              query: articles.article,
+            }} prefetch={true} >Read More</Link>
           </Typography>
         </CardBody>
         
