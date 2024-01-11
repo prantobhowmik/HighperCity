@@ -1,4 +1,5 @@
 "use client"
+import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from "react";
 import {
@@ -11,7 +12,8 @@ import { BellIcon, Cog6ToothIcon } from "@heroicons/react/24/solid";
  
 export default function Nav() {
 
-  let[category, setCategory]= useState("global");
+  const[category,setCategory]= useState("global");
+  
 
 
   return (
@@ -44,8 +46,8 @@ export default function Nav() {
             label="Type here..."
             className="pr-20"
             onChange={(event)=>{
-              setCategory(event.target.value);
-            }}
+                setCategory(event.target.value);
+              }}
             containerProps={{
               className: "min-w-[288px]",
             }}
